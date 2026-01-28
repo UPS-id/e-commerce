@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-light.css" />
+    <title>IDNCART - Shop</title>
 </head>
 
 <body>
@@ -197,13 +200,642 @@
                     </div>
                 </div>
                 <!-- Brand filter end -->
+
+                <!-- Category Fillter -->
+                <div class="py-5">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase">Price</h3>
+                    <div class="mt-4 flex items-center">
+                        <input type="text"
+                            class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                            placeholder="min">
+                        <span class="mx-3 text-gray-500">-</span>
+                        <input type="text"
+                            class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                            placeholder="max">
+                    </div>
+                </div>
+                <!-- Category Fillter End -->
+
+                <!-- Size Fillter -->
+                <div class="py-5">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase">Size</h3>
+                    <div class="flex items-center gap-2">
+                        <div class="size-selector">
+                            <input type="radio" name="Size" class="hidden" id="size-xs">
+                            <label for="size-xs"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">XS</label>
+                        </div>
+
+                        <div class="size-selector">
+                            <input type="radio" name="Size" class="hidden" id="size-s">
+                            <label for="size-s"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">S</label>
+                        </div>
+
+                        <div class="size-selector">
+                            <input type="radio" name="Size" class="hidden" id="size-m">
+                            <label for="size-m"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">M</label>
+                        </div>
+
+                        <div class="size-selector">
+                            <input type="radio" name="Size" class="hidden" id="size-l">
+                            <label for="size-l"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">L</label>
+                        </div>
+
+                        <div class="size-selector">
+                            <input type="radio" name="Size" class="hidden" id="size-xl">
+                            <label for="size-xl"
+                                class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm">XL</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Size Fillter End -->
+
+                <div class="py-5">
+                    <h3 class="text-xl ☐ text-gray-800 mb-3 uppercase">color</h3>
+                    <div class="flex items-center gap-2">
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="red" />
+                            <label for="red"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block bg-primary"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="white" />
+                            <label for="white"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block bg-white"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" class="hidden" id="black" />
+                            <label for="black"
+                                class="border border-gray-200 rounded-sm h-5 w-5 cursor-pointer shadow-sm block bg-black"></label>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- Sidebar End -->
 
-        <!-- Products -->
-        <div class="col-span-3 "></div>
-        <!-- Products End -->
+        <!-- products -->
+        <div class="col-span-3">
+            <!-- sorting -->
+            <div class="flex items-center-mb-4">
+                <select
+                    class="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary cursor-pointer">
+                    <option value="">Default sorting</option>
+                    <option value="">Price low-hight</option>
+                    <option value="">Price hight-low</option>
+                    <option value="">Latest product</option>
+                </select>
+                <div class="ml-auto flex gap-2">
+                    <div
+                        class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer">
+                        <i class="fa-solid fa-grid"></i>
+                    </div>
+                    <div
+                        class="border border-gray-300 w-10 h-9 flex items-center justify-center text-gray-600 rounded cursor-pointer">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- sorting end -->
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-3 gap-6 items-start my-5">
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product1.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://i.pinimg.com/originals/6e/88/5a/6e885a5db4199b71792d8129d86e4e65.jpg">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB2LsJD/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Sofa
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 150.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 200.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(150)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product2.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://ih1.redbubble.net/image.3585496995.8758/st,small,507x507-pad,600x600,f8f8f8.jpg">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Couple Chair
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 200.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 500.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(50)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product3.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.HX4iVXYnizuiYGJTwsrT8QHaIb?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB2LsJD/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Air Mattress
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 50.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 100.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(1000)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product4.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Platform Bed
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product5.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                Dining Set
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product6.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                BROCKING CHAIR
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product7.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                SUN LOUNGERS
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product8.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                DINING CHAIR
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product9.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                ARMCHAIR (Pink)
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product10.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                ARMCHAIR (Blue)
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product11.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                UPHOLSTERED BED
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+
+                <div class="bg-white shadow rounded overflow-hidden group">
+                    <div class="relative">
+                        <img class="w-full" src="images/products/product12.jpg" alt="" />
+                        <div
+                            class="absolute inset-0 bg-black/40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                            <a class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
+                                href="https://tse3.mm.bing.net/th/id/OIP.UIAGZhUtISkAcNXcxuqDMwHaE1?rs=1&pid=ImgDetMain&o=7&rm=3">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href=""
+                                class="text-white text-lg w-9 h-9 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 pb-3 px-4">
+                        <a href="https://tk.tokopedia.com/ZSaB4wdSP/">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                                SIDE TABLE
+                            </h4>
+                        </a>
+                        <div class="flex items-baseline space-x-2 font-roboto mb-1">
+                            <p class="text-xl text-primary font-semibold">Rp 500.000</p>
+                            <p class="text-sm text-gray-400 line-through">Rp 1000.000</p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-400 ml-2">(100)</div>
+                        </div>
+                    </div>
+
+                    <a href=""
+                        class="bg-primary w-full block py-1 text-white text-center border border-primary rounded-b hover:bg-transparent hover:text-primary transition">Add
+                        To Cart</a>
+                </div>
+            </div>
+            <!-- Product Grid end -->
+
+        </div>
+        <!-- products end -->
     </div>
 
     <!-- Footer -->
